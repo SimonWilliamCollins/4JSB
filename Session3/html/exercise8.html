@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        Author  Simon Collins
+        Date    ??.??.??
+        Notes   This file is an exercise in adding JavaScript in HTML
+                Session?
+    -->
+<head>
+    <title>Exercise 8</title>
+    <button type="button" onclick="myPopup()">PopUp Google!</button><br />
+    <button type="button" onclick="window.print()">print this page</button><br />
+    <button type="button" onclick="myFunction('pass a string to myFunction')">Call function!</button>
+    <button type="button" onclick="displayDate()">Date</button>
+    
+</head>
+<body onload="myMessage()">
+    <p>The function is called on loading the page. <br />
+    the rest of the page will display after the function is called.</p>
+    <br />
+    <div    onmouseover="mOver(this)" 
+            onmouseout="mOut(this)" 
+            style=" background-color: aqua; 
+                width: 200px; 
+                height: 200px; 
+                padding: 40px;">Mouse over me
+    </div>
+    <p id="thedate"></p>
+    <script src="../js/exercise8.js">
+    </script>
+</body>
+</html>
